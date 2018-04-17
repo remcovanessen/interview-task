@@ -5,9 +5,9 @@ var totalSlides = $('#slider-wrap ul li').length;
 //get the slide width
 var sliderWidth = $('#slider-wrap').width();
 
+
 $(document).ready(function(){
 	
-
 	
 	/*****************
 	 BUILD THE SLIDER
@@ -71,6 +71,9 @@ function slideLeft(){
 	if(pos==-1){ pos = totalSlides-1; }
 	$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 	
 	
+	//*> optional
+	countSlides();
+	pagination();
 }
 
 
@@ -81,6 +84,10 @@ function slideRight(){
 	pos++;
 	if(pos==totalSlides){ pos = 0; }
 	$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 
+	
+	//*> optional 
+	countSlides();
+	pagination();
 }
 
 
@@ -97,7 +104,8 @@ function pagination(){
 	$('#pagination-wrap ul li').removeClass('active');
 	$('#pagination-wrap ul li:eq('+pos+')').addClass('active');
 }
-
+		
+	
 
 // ***********
 // add class after load
