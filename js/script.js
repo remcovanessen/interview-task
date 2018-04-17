@@ -103,8 +103,9 @@ function pagination(){
 // add class after load
 // ***************/
 
-
-$("body").addClass("class_after_load");
+$(window).bind("load", function() {
+   document.body.classList.add("class_after_load");
+});
 
 		
 	
