@@ -97,5 +97,14 @@ function pagination(){
 	$('#pagination-wrap ul li').removeClass('active');
 	$('#pagination-wrap ul li:eq('+pos+')').addClass('active');
 }
+
+
+// ***********
+// add class after load
+// ***************/
+
+
+$("body").addClass("class_after_load");
+
 		
 	
