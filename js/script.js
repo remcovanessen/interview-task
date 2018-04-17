@@ -107,5 +107,17 @@ $(window).bind("load", function() {
    document.body.classList.add("class_after_load");
 });
 
+// jquery page reload - useful when resizing so the slider gets the new slide width
+$(window).resize(function(){location.reload();});
+
+$(document).ready(function() {
+
+    // Hide the slider
+    $("#slider").hide();
+
+    // Show the slider with a fade, so browser can resize slider when hidden
+    $("#slider").fadeIn(500);
+
+});
 		
 	
