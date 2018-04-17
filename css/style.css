@@ -444,6 +444,7 @@ ul.aboutlist {
     width: 30%;
     display: inline-block;
     margin: 70px 15px 100px;
+    vertical-align: top;
 }
 
 ul.aboutlist li:first-child {
